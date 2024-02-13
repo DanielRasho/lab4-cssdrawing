@@ -1,0 +1,85 @@
+/* ===========*/
+/* CSS RESET */
+/* ===========*/
+.drawing {
+    position: relative;
+}
+
+/* ==================*/
+/* ESSENCTIAL STYLING*/
+/* ==================*/
+
+/* ===========*/
+/*   COLORS */
+/* ===========*/
+:root{
+    --black: #000000;
+    --blue: #35223c;
+    --dark-blue: #242c3f;
+    --light-blue: #424f6b;
+    --purple1: #000000;
+    --purple2: #000000;
+    --purple3: #000000;
+    --purple4: #000000;
+}
+
+/* ===========*/
+/* KNIGHT */
+/* ===========*/
+.knight {
+    position: relative;
+}
+
+.knight div {
+    position: absolute;
+    width: 15vw;
+    height: calc(15vw * 1.75);
+}
+.knight .helmet{
+    z-index: 30;
+}
+.knight .body{
+    z-index: 10;
+}
+
+.cape {
+    width: 100%;
+}
+
+.left-cape > .feather,
+.right-cape > .feather {
+    background-color: var(--dark-blue);
+    width: 60%; 
+    height: calc(15vw * 0.25);
+    border: 3px solid var(--black);
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ;
+    position: absolute;
+    z-index: 20;
+    bottom: 25%;
+    right: 0;
+}
+
+.left-cape :first-child,
+.right-cape :first-child {
+    z-index: 21;
+    transform: rotate(70deg) translateY(120%);
+}
+.left-cape :nth-child(2),
+.right-cape :nth-child(2) {
+    z-index: 22;
+    transform: rotate(80deg) translateY(120%);
+}
+.left-cape :nth-child(3),
+.right-cape :nth-child(3) {
+    z-index: 23;
+    transform: rotate(90deg) translateY(120%);
+}
+
+.left-cape {
+    z-index: 20;
+    transform: scaleX(-1) rotate(10deg) translateX(10%);
+}
+
+/* ===========*/
+/* CRISTALS */
+/* ===========*/
