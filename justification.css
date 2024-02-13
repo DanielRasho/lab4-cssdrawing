@@ -1,0 +1,40 @@
+.justification {
+    background-color: var(--black);
+    margin: 0;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.justification *{
+    margin: 0;
+    color: white;
+    font-family: 'Times New Roman', serif ;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.justification h3 ,
+.justification h2{
+    font-size: 3rem;
+    margin-top: 3ch;
+    margin-bottom: 1ch;
+}
+
+p{
+    max-width: 60ch;
+}
+.justification figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justification figure img {
+    height: 40vh;
+}
+
+.justification a {
+    color: orange;
+}
