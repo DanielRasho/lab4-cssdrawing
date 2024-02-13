@@ -104,6 +104,9 @@ html, body {
     position: relative;
     right: -40%;
     top: -55%;
+    animation-name: eyes-moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 .eyes::before ,
 .eyes::after{
@@ -122,6 +125,36 @@ html, body {
     transform: translateX(100%);
 }
 
+@keyframes eyes-moving {
+   0% {
+    right: -40%;
+    top: -55%;
+   } 
+   15% {
+    right: -35%;
+    top: -58%;
+   } 
+    25% {
+    right: -45%;
+    top: -58%;
+    }  
+    35% {
+    right: -45%;
+    top: -55%;
+    }  
+    45% {
+    right: -35%;
+    top: -55%;
+    }  
+   65% {
+    right: -40%;
+    top: -55%;
+   } 
+   100% {
+    right: -40%;
+    top: -55%;
+   } 
+}
 
 .knight .body{
     z-index: 10;
